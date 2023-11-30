@@ -1,0 +1,665 @@
+
+/* Para iphone 11 pro max */
+@media screen and (max-width: 720px){
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+
+  /* Contenedores padres */
+  .encabezado {
+    width: 100%;
+    justify-content: center;
+    height: 25vh;
+    background-color: rgb(31, 31, 136);
+    box-shadow: 0 0 0 0.2rem #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .container-nav {
+    border-top: 1px solid white;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    top: 10%;
+    gap: 15px;
+    height: 30vh;
+    background-color: rgb(31, 31, 136);
+    display: none;
+    position: absolute;
+    flex-direction: column;
+  }
+  .contenedor-padre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pie {
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(31, 31, 136);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  /* Elementos contenedor padre (HEADER) */
+  
+  .Titulo {
+    color: #fff;
+    height: 4rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+    .btn_menu{
+      margin-left: 5px;
+      width: 50px;
+    }
+    .btn_menu>button{
+      width: 50px;
+      border: none;
+      background-color: rgb(31, 31, 136);
+  
+    }
+    .btn_menu>button>img{
+      width: 50px;
+    }
+    .boton-circular {
+      border-radius: 50%;
+      transition: transform 0.2s;
+    }
+    
+    .boton-circular:active {
+      transform: scale(0.9);
+    }
+  .Titulo > article {
+    width: 67px;
+    height: 4rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    margin-left: 30px;
+  }
+  .Titulo > article > img {
+    width: 50px;
+    height: 80px;
+  }
+.Titulo>h2{
+  margin-left: 5px;
+
+}
+/* manipular login movil */
+.login-movil{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+  /* login movil */
+  .Login_register2 {
+    width: 240px;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+  }
+  .Login_register2 > div> a{
+    color: white;
+    text-decoration: none;
+  }
+  .btn_cerrar2 {
+    width: 50px;
+    height: 1rem;
+    display: none;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .btn_cerrar2>a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .btn_cerrar2:hover {
+    background-color: #cc0000;
+  }
+  /* boton pc */
+  .btn_cerrar1{
+    display: none;
+  }
+  .Login_register2 > div {
+    width: 100px;
+    font-size: 13px;
+    height: 2rem;
+    border: 1px solid #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .Login_register2 > div:hover {
+    background-color: rgb(0, 0, 100); /* nuevo color de fondo */
+  }
+  .Login_register2 > div > input {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Estilos para el campo de búsqueda */
+  .buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos para el campo de texto de búsqueda */
+  .buscador input[type="text"] {
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para el botón de búsqueda */
+  .boton {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilos para el botón de búsqueda cuando se pasa el cursor por encima */
+  .boton:hover {
+    background-color: #3e8e41;
+  }
+  .Login_register {
+    width: 260px;
+    height: 4rem;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+  }
+  .Login_register > div {
+    width: 110px;
+    font-size: 15px;
+    height: 2rem;
+    border: 1px solid #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .Login_register > div:hover {
+    background-color: rgb(0, 0, 100); /* nuevo color de fondo */
+  }
+  .Login_register > div > input {
+    border: none;
+  }
+  /* Elementos del aside (navegador) */
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Estilos para la lista */
+  .menu ul {
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+  }
+  
+  /* Estilos para los elementos de la lista */
+  .menu li {
+    margin-top: 10px;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid #fff;
+  }
+  .menu li:hover {
+    background-color: rgb(124, 124, 167);
+  }
+  
+  /* Estilos para los enlaces del nav */
+  .enlace {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilos para el enlace activo */
+  .enlace.activo {
+    background-color: #fff;
+    color: #4caf50;
+  }
+  /* elementos del contenedor padre */
+  .redes-sociales{
+    position: absolute;
+    display: none;
+    right: 20px;
+    bottom: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+  }
+  .redes-sociales>h3{
+    display: none;
+  }
+  .redes-sociales>label{
+    width: 50px;
+    height: 50px;
+    border: none;
+  }
+  .redes-sociales>label>a>img{
+    width: 50px;
+    height: 50px;
+  }
+  .whatsapp{
+
+  }
+  .facebook{
+    display: none;
+  }
+  .instagram{
+    display: none;
+  }
+  
+  .Informacion{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Informacion>div{
+    color: gray;
+    justify-content: end;
+    width: 80%;
+    height: 2rem;
+    border-bottom: 1px solid gray;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .Informacion>div>img{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  .infGeneral{
+    margin-top: 20px;
+    gap: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+  }
+  .infGeneral>div{
+  
+  }
+  .label-agencias{
+   width: 100%;
+   height: 140px;
+   display: flex;
+   justify-content: center;
+  }
+  .label-agencias>img{
+    width: 220px;
+    height: 140px;
+  }
+  /* elementos del footer */
+  .copyright {
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  
+}
+
+.encabezado.logged-in {
+  height: 15vh;
+}
+
+.Login_register > div {
+  width: 110px;
+  font-size: 15px;
+  height: 2rem;
+  border: 1px solid #fff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.Login_register > div:hover {
+  background-color: rgb(0, 0, 100); /* nuevo color de fondo */
+}
+
+/* PANTALLA PC o table */
+
+@media screen and (min-width: 721px)   {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+/* elementos del movil */
+
+.login-movil{
+  display: none;
+}
+
+
+
+
+  /* Contenedores padres */
+  .encabezado {
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(31, 31, 136);
+    box-shadow: 0 0 0 0.2rem #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+  }
+  .container-nav {
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(31, 31, 136);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .contenedor-padre {
+    width: 100%;
+    height: 74vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pie {
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(31, 31, 136);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  /* Elementos contenedor padre (HEADER) */
+  .Titulo {
+    color: white;
+    width: 400px;
+    height: 4rem;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+  }
+  .Titulo > article {
+    width: 67px;
+    height: 4rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+  }
+  .Titulo > article > img {
+    width: 50px;
+    height: 80px;
+  }
+  .btn_menu{
+    display: none;
+  }
+  /* Estilos para el campo de búsqueda */
+  .buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos para el campo de texto de búsqueda */
+  .buscador input[type="text"] {
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para el botón de búsqueda */
+  .boton {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilos para el botón de búsqueda cuando se pasa el cursor por encima */
+  .boton:hover {
+    background-color: #3e8e41;
+  }
+  .Login_register {
+    width: 260px;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+  }
+
+  .Login_register > div > a {
+    border: none;
+  }
+  .Login_register>div>a{
+    color: white;
+    text-decoration: none;
+  }
+  .btn_cerrar1 {
+    display: none;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .btn_cerrar1>a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .btn_cerrar1:hover {
+    background-color: #cc0000;
+  }
+  /* boton movil */
+  .btn_cerrar2{
+    display: none;
+  }
+  /* Elementos del aside (navegador) */
+  .menu {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  /* Estilos para la lista */
+  .menu ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para los elementos de la lista */
+  .menu li {
+    margin-right: 10px;
+    border-radius: 10px;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .menu li:hover {
+    background-color: rgb(124, 124, 167);
+  }
+  
+  /* Estilos para los enlaces del nav */
+  .enlace {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilos para el enlace activo */
+  .enlace.activo {
+    background-color: #fff;
+    color: #4caf50;
+  }
+  /* elementos del contenedor padre */
+  .redes-sociales{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 320px;
+    right: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+  }
+  .redes-sociales>h3{
+    display: flex;
+  }
+  .redes-sociales>label{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+  }
+  .redes-sociales>label>a>img{
+    width: 50px;
+    height: 50px;
+  }
+  .facebook{
+    display: flex;
+  }
+  .instagram{
+    display: flex;
+
+  }
+  
+  .Informacion{
+    margin-top: 100px;
+    width: 800px;
+    background-color: #fff;
+  
+  }
+  .Informacion>div{
+    color: gray;
+    justify-content: end;
+    width: 100%;
+    height: 2rem;
+    border-bottom: 1px solid gray;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .Informacion>div>img{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  .infGeneral{
+    margin-top: 20px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+  }
+  .infGeneral>div{
+  
+  }
+  .label-agencias{
+   width: 100%;
+   height: 240px;
+   display: flex;
+   justify-content: center;
+  }
+  .label-agencias>img{
+    width: 400px;
+    height: 240px;
+  }
+  /* elementos del footer */
+  .copyright {
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  
+}

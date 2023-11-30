@@ -1,0 +1,744 @@
+@media screen and (max-width: 720px){
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+      }
+        /* contenedor padre o body */
+        .contenedor_padre{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+          }
+          /* contenedor principal */
+          .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            
+          }
+
+          /* agregar user */
+          .agregarUser{
+            width: 60px;
+            height: 60px;
+            position: fixed;
+            right: 20px;
+            bottom: 50px;
+            background-color: rgb(31, 31, 136);
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .agregarUser img{
+            width: 20px;
+            height: 20px;
+
+          }
+          /* encabezado */
+          .encabezado{
+            width: 100%;
+            height: 15vh;
+            background-color: rgb(31, 31, 136);
+            display: flex;
+            align-items: center;
+            
+          }
+          /* boton del menu */
+          .btn_menu{
+            margin-left: 5px;
+            width: 50px;
+          }
+          .btn_menu>button{
+            width: 50px;
+            border: none;
+            background-color: rgb(31, 31, 136);
+        
+          }
+          .btn_menu>button>img{
+            width: 50px;
+          }
+          .boton-circular {
+            border-radius: 50%;
+            transition: transform 0.2s;
+          }
+          
+          .boton-circular:active {
+            transform: scale(0.9);
+          }
+    
+          /* perfil admin */
+          .perfilAdmin {
+            position: absolute;
+            top: 124px;
+            left: 40px;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 17rem;
+            background-color: rgb(31, 31, 136);
+            border-radius: 10px;
+    
+          }
+          
+          .perfilAdmin h4,
+          .perfilAdmin p {
+            width: 250px;
+            display: flex;
+            padding: 2px;
+            justify-content: center;
+            align-items: center;
+            height: 2rem;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 5px;
+            border-bottom: 1px solid white;
+          }
+          
+          .perfilAdmin h3 {
+            font-weight: bold;
+            background-color: #f2f2f2;
+            width: 100%;
+            text-align: center;
+          }
+          
+          .perfilAdmin p {
+            background-color: #fff;
+            width: 250px;
+            color: #000;
+          }
+          
+          .perfilAdmin a {
+            margin: 10px;
+            text-align: center;
+          }
+          
+          .perfilAdmin button {
+            padding: 5px 10px;
+            background-color: #FF0000;
+            color: #fff;
+            height: 3rem;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+          }
+          .perfilAdmin button:hover {
+            background-color: #CC0000;
+          }
+          
+         /* contenedor del logo y titulo */
+         #ban{
+            justify-content: center;
+            width: 300px;
+            height: 100%;
+            color: white;
+            align-items: center;
+            gap: 15px;
+            display: flex;
+         }
+         /* logo */
+         #ban article{
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+         /* imagen del logo */
+         #ban article img{
+            width: 60px;
+            height: 60px;
+         }
+         /* contenedor usuarios */
+         .contenedorUsers{
+            flex: 1;   
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;    
+         }
+         #mostrarDatos {
+          display: none;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 80%;
+          max-width: 300px;
+          padding: 20px;
+          border-radius: 10px;
+          background-color: rgb(31, 31, 136);
+          color: #fff;
+          font-family: Arial, sans-serif;
+          text-align: center;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        #mostrarDatos p {
+          margin: 10px 0;
+        }
+        
+        #mostrarDatos span {
+          font-weight: bold;
+        }
+        .btn_cerrar{
+          width: 50px;
+          position: absolute;
+          background-color: rgb(31, 31, 136);
+          border: none;
+          right: 0;
+          top: 0;
+        }
+        
+        
+        
+        
+         .numero{
+          width: 150px;
+          height: 2rem;
+          background-color: #fff;
+         }
+          .oculto {
+            display: flex;
+          }
+
+
+         .usuarios-container{
+    
+          overflow-y: scroll;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex: 1;
+          gap: 5px;
+          padding: 5px;
+         }
+         .usuarios-container form{
+          display: flex;
+          align-items: center;
+         }
+         .usuario{
+          border-radius: 10px;
+          flex: none;
+          width: 98%;
+          height: 3rem;
+          display: flex;
+          
+          border: 1px solid #000;
+         }
+         .usuario article{
+          border-top-left-radius: 10px;
+          width: 50px;
+          height: 3rem;
+          background-color: rgb(31, 31, 136);
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-bottom-left-radius: 10px;
+         }
+         .usuario label{
+          width: 150px;
+          height: 3rem;
+          display: flex;
+          align-items: center;
+          padding-left: 5px;
+         }
+         .usuario button{
+          width: 100px;
+          border-radius: 5px;
+          height: 40px;
+          margin-right: 5px;
+          background-color: orangered;
+         }
+         /* pie de pagina */
+         .pie{
+            width: 100%;
+            height: 3rem;
+            background-color: rgb(31, 31, 136);
+            color: white;
+         }
+         .copyright {
+            display: flex;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+          }
+}
+@media screen and (min-width: 721px)   {
+  * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+      }
+      /* boton home */
+      .home{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      .home img{
+        width: 100px;
+        height: 100px;
+      }
+        /* agregar user */
+        .agregarUser{
+          width: 60px;
+          height: 60px;
+          position: fixed;
+          right: 20px;
+          bottom: 50px;
+          background-color: rgb(31, 31, 136);
+          border-radius: 50px;
+          display: none;
+          align-items: center;
+          justify-content: center;
+        }
+        .agregarUser img{
+          width: 20px;
+          height: 20px;
+
+        }
+         /* contenedor padre o body */
+        .contenedor_padre{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+          }
+          /* contenedor principal */
+          .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            
+          }
+          .encabezado{
+            width: 100%;
+            height: 15vh;
+            background-color: rgb(31, 31, 136);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+          }
+          .btn_menu{
+            display: none;
+          }
+          .perfilAdmin{
+            display: none;
+          }
+             /* contenedor del logo y titulo */
+         #ban{
+          justify-content: center;
+          width: 1000px;
+          height: 100%;
+          color: white;
+          align-items: center;
+          gap: 15px;
+          display: flex;
+       }
+       /* logo */
+       #ban article{
+          width: 80px;
+          height: 80px;
+          background-color: white;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+       }
+       /* imagen del logo */
+       #ban article img{
+          width: 60px;
+          height: 60px;
+       }
+       #ban h3{
+        font-size: 50px;
+       }
+       /* contenedor usuarios */
+       .contenedorUsers{
+          height: 75vh;
+          margin-top: 10px;
+          overflow-y: scroll;
+          flex-direction: column; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+       }
+       .usuario{
+        display: flex;
+        width: 1000px;
+        border: 1px solid;
+        height: 3rem;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+       }
+       .usuario input{
+        width: 100px;
+        height: 1rem;
+       }
+       .usuario article{
+        width: 100px;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+       }
+       .usuario label{
+        width: 200px;
+        height: 2rem;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .usuario button{
+        width: 100px;
+        height: 2rem;
+        border-radius: 5px;
+        background-color: orangered;
+       }
+
+
+       .mi-formulario {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 600px; /* Puedes ajustar este ancho según tus preferencias */
+        margin: 0 auto; /* Para centrar el formulario */
+        height: 400px;
+      }
+      
+      .form-group {
+        flex-basis: calc(50% - 10px); /* Divide en dos columnas y agrega un espacio entre ellas */
+        margin-bottom: 10px;
+      }
+      
+      .form-group.descripcion {
+        flex-basis: 100%; /* Ocupa todo el ancho de una sola columna */
+      }
+      
+      .form-group label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+      
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      
+      .form-group textarea {
+        resize: vertical;
+      }
+      
+      .input-imagen {
+        display: flex; 
+
+        width: 250px;/* Ocultar el input original */
+      }
+      
+      .form-group label {
+        cursor: pointer; /* Cambiar el cursor al pasar por el label */
+        padding: 5px 10px;
+        background-color: rgb(31, 31, 136);
+
+        color: white;
+        border-radius: 4px;
+      }
+      
+      .form-group label:hover {
+        background-color: #0056b3;
+      }
+      
+      /* Estilo para el botón de tipo submit */
+      .boton-agregar {
+        width: 130px;
+        height: 2rem;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .texto{
+        width: 100px;
+        font-size: 15px;
+      }
+      
+      .boton-agregar:hover {
+        background-color: #0056b3;
+      }
+      
+
+
+
+
+
+
+
+      .mi-tabla {
+        width: 100%;
+        border-collapse: collapse;
+      }
+  
+      .mi-tabla th, .mi-tabla td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+      }
+  
+      .mi-tabla th {
+        background-color: #f2f2f2;
+      }
+  
+      .tipo-plan {
+        font-weight: bold;
+      }
+  
+      .precio {
+        font-weight: bold;
+        color: #009900;
+      }
+  
+      .eliminar-link {
+        color: #ff0000;
+        text-decoration: none;
+      }
+  
+      .eliminar-link:hover {
+        text-decoration: underline;
+      }
+
+
+
+
+
+
+      .tabla_edit {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid grey;
+    }
+
+    .tabla_edit th,
+    .tabla_edit td {
+        border: 1px solid grey;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .tabla_edit th {
+        background-color: #f2f2f2;
+    }
+
+    .tabla_edit td:nth-child(6) {
+        font-weight: bold;
+    }
+
+    .tabla_edit td:nth-child(7) {
+        color: #009900;
+        font-weight: bold;
+    }
+
+    /* Estilos para el botón de editar en la tabla con clase "tabla_edit" */
+    .tabla_edit .editar-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .tabla_edit .editar-btn:hover {
+        background-color: #45a049;
+    }
+
+
+
+
+    #editarPlanForm {
+      width: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #editarPlanForm label {
+      display: block;
+      margin-bottom: 8px;
+  }
+
+  #editarPlanForm input[type="text"],
+  #editarPlanForm input[type="date"],
+  #editarPlanForm input[type="number"],
+  #editarPlanForm textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
+
+  #editarPlanForm textarea {
+      resize: vertical;
+  }
+  .cancelar{
+    background-color: orangered;
+    height: 2rem;
+    text-decoration: none;
+    color: white;
+  }
+  .cancelar a{
+    color: white;
+    text-decoration: none;
+  }
+  #editarPlanForm button {
+      margin-left: 40px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      height: 2rem;
+      cursor: pointer;
+  }
+
+  #editarPlanForm button.cancelar {
+      background-color: #f44336;
+  }
+
+
+
+            /* pie de pagina */
+            .pie{
+              width: 100%;
+              height: 3rem;
+              background-color: rgb(31, 31, 136);
+              color: white;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+           }
+           .copyright {
+              display: flex;
+              text-align: center;
+              font-size: 14px;
+              color: #fff;
+            }
+
+          .usuarios-contenedor{
+            width: 700px;
+            height: 450px;
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+
+          }
+          .editar_user{
+            width: 100%;
+           
+            display: flex;
+           
+          }
+          .editar_user article{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 2rem;
+            width: 100px;
+            border-right: 1px solid;
+            border-bottom: 1px solid;
+          }
+          .editar_user label{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 240px;
+            border-bottom: 1px solid;
+          }
+          .editar_user button{
+            width: 100px;
+            background-color: goldenrod;
+            color: white;
+            height: 2rem;
+            border-bottom: 1px solid;
+          }
+
+            /* Estilos para el formulario */
+.form_login {
+  max-width: 300px;
+  top: 160px;
+  right: 40px;
+  position: absolute;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form_login input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.form_login input[type="text"],
+.form_login input[type="password"] {
+  font-size: 16px;
+}
+
+.form_login input[type="text"]::placeholder,
+.form_login input[type="password"]::placeholder {
+  color: #999;
+}
+
+.form_login button {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form_login button:hover {
+  background-color: #0056b3;
+}
+
+.form_login button:focus {
+  outline: none;
+}
+
+}

@@ -1,0 +1,428 @@
+@media screen and (max-width: 720px){
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+      }
+        /* contenedor padre o body */
+        .contenedor_padre{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+          }
+          /* contenedor principal */
+          .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            
+          }
+
+          /* agregar user */
+          .agregarUser{
+            width: 60px;
+            height: 60px;
+            position: fixed;
+            right: 20px;
+            bottom: 50px;
+            background-color: rgb(31, 31, 136);
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .agregarUser img{
+            width: 20px;
+            height: 20px;
+
+          }
+          /* encabezado */
+          .encabezado{
+            width: 100%;
+            height: 15vh;
+            background-color: rgb(31, 31, 136);
+            display: flex;
+            align-items: center;
+            
+          }
+          /* boton del menu */
+          .btn_menu{
+            margin-left: 5px;
+            width: 50px;
+          }
+          .btn_menu>button{
+            width: 50px;
+            border: none;
+            background-color: rgb(31, 31, 136);
+        
+          }
+          .btn_menu>button>img{
+            width: 50px;
+          }
+          .boton-circular {
+            border-radius: 50%;
+            transition: transform 0.2s;
+          }
+          
+          .boton-circular:active {
+            transform: scale(0.9);
+          }
+    
+          /* perfil admin */
+          .perfilAdmin {
+            position: absolute;
+            top: 124px;
+            left: 40px;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 17rem;
+            background-color: rgb(31, 31, 136);
+            border-radius: 10px;
+    
+          }
+          
+          .perfilAdmin h4,
+          .perfilAdmin p {
+            width: 250px;
+            display: flex;
+            padding: 2px;
+            justify-content: center;
+            align-items: center;
+            height: 2rem;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 5px;
+            border-bottom: 1px solid white;
+          }
+          
+          .perfilAdmin h3 {
+            font-weight: bold;
+            background-color: #f2f2f2;
+            width: 100%;
+            text-align: center;
+          }
+          
+          .perfilAdmin p {
+            background-color: #fff;
+            width: 250px;
+            color: #000;
+          }
+          
+          .perfilAdmin a {
+            margin: 10px;
+            text-align: center;
+          }
+          
+          .perfilAdmin button {
+            padding: 5px 10px;
+            background-color: #FF0000;
+            color: #fff;
+            height: 3rem;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+          }
+          .perfilAdmin button:hover {
+            background-color: #CC0000;
+          }
+          
+         /* contenedor del logo y titulo */
+         #ban{
+            justify-content: center;
+            width: 300px;
+            height: 100%;
+            color: white;
+            align-items: center;
+            gap: 15px;
+            display: flex;
+         }
+         /* logo */
+         #ban article{
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+         /* imagen del logo */
+         #ban article img{
+            width: 60px;
+            height: 60px;
+         }
+         /* contenedor usuarios */
+         .contenedorUsers{
+            flex: 1;       
+         }
+         #mostrarDatos {
+          display: none;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 80%;
+          max-width: 300px;
+          padding: 20px;
+          border-radius: 10px;
+          background-color: rgb(31, 31, 136);
+          color: #fff;
+          font-family: Arial, sans-serif;
+          text-align: center;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        #mostrarDatos p {
+          margin: 10px 0;
+        }
+        
+        #mostrarDatos span {
+          font-weight: bold;
+        }
+        .btn_cerrar{
+          width: 50px;
+          position: absolute;
+          background-color: rgb(31, 31, 136);
+          border: none;
+          right: 0;
+          top: 0;
+        }
+        
+        
+        
+        
+         .numero{
+          width: 150px;
+          height: 2rem;
+          background-color: #fff;
+         }
+          .oculto {
+            display: flex;
+          }
+
+
+         .usuarios-container{
+          overflow-y: scroll;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex: 1;
+          gap: 5px;
+          padding: 5px;
+         }
+         .usuarios-container form{
+          display: flex;
+          align-items: center;
+         }
+         .usuario{
+          border-radius: 10px;
+          flex: none;
+          width: 98%;
+          height: 3rem;
+          display: flex;
+          
+          border: 1px solid #000;
+         }
+         .usuario article{
+          border-top-left-radius: 10px;
+          width: 50px;
+          height: 3rem;
+          background-color: rgb(31, 31, 136);
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-bottom-left-radius: 10px;
+         }
+         .usuario label{
+          width: 150px;
+          height: 3rem;
+          display: flex;
+          align-items: center;
+          padding-left: 5px;
+         }
+         .usuario button{
+          width: 100px;
+          border-radius: 5px;
+          height: 40px;
+          margin-right: 5px;
+          background-color: orangered;
+         }
+         /* pie de pagina */
+         .pie{
+            width: 100%;
+            height: 3rem;
+            background-color: rgb(31, 31, 136);
+            color: white;
+         }
+         .copyright {
+            display: flex;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+          }
+}
+@media screen and (min-width: 721px)   {
+  * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+      }
+      /* boton home */
+      .home{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      .home img{
+        width: 100px;
+        height: 100px;
+      }
+        /* agregar user */
+        .agregarUser{
+          width: 60px;
+          height: 60px;
+          position: fixed;
+          right: 20px;
+          bottom: 50px;
+          background-color: rgb(31, 31, 136);
+          border-radius: 50px;
+          display: none;
+          align-items: center;
+          justify-content: center;
+        }
+        .agregarUser img{
+          width: 20px;
+          height: 20px;
+
+        }
+         /* contenedor padre o body */
+        .contenedor_padre{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+          }
+          /* contenedor principal */
+          .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            
+          }
+          .encabezado{
+            width: 100%;
+            height: 15vh;
+            background-color: rgb(31, 31, 136);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+          }
+          .btn_menu{
+            display: none;
+          }
+          .perfilAdmin{
+            display: none;
+          }
+             /* contenedor del logo y titulo */
+         #ban{
+          justify-content: center;
+          width: 1000px;
+          height: 100%;
+          color: white;
+          align-items: center;
+          gap: 15px;
+          display: flex;
+       }
+       /* logo */
+       #ban article{
+          width: 80px;
+          height: 80px;
+          background-color: white;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+       }
+       /* imagen del logo */
+       #ban article img{
+          width: 60px;
+          height: 60px;
+       }
+       #ban h3{
+        font-size: 50px;
+       }
+       /* contenedor usuarios */
+       .contenedorUsers{
+          flex: 1;
+          overflow-y: scroll;
+          flex-direction: column; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+       }
+       .usuario{
+        display: flex;
+        width: 1000px;
+        border: 1px solid;
+        height: 3rem;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+       }
+       .usuario input{
+        width: 100px;
+        height: 1rem;
+       }
+       .usuario article{
+        width: 100px;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+       }
+       .usuario label{
+        width: 200px;
+        height: 2rem;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .usuario button{
+        width: 100px;
+        height: 2rem;
+        border-radius: 5px;
+        background-color: orangered;
+       }
+            /* pie de pagina */
+            .pie{
+              width: 100%;
+              height: 3rem;
+              background-color: rgb(31, 31, 136);
+              color: white;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+           }
+           .copyright {
+              display: flex;
+              text-align: center;
+              font-size: 14px;
+              color: #fff;
+            }
+}
